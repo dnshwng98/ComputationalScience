@@ -1,0 +1,1 @@
+urls = {"bmkg":"https://www.bmkg.go.id/gempabumi/gempabumi-realtime.bmkg",}
