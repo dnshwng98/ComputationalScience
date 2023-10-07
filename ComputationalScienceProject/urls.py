@@ -19,4 +19,16 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+# Earthquake URLS
+    path('earthquake/check/', earthquake_views.check, name="earthquake-check"),
+    path('earthquake/retrieve-data/', earthquake_views.retrieve_data, name="earthquake-retrieve-data"),
+    path('earthquake/collect-new-data/', earthquake_views.collect_new_data, name="earthquake-collect-new-data"),
+    path('earthquake/check-the-amount-of-new-data-available/', earthquake_views.check_the_amount_of_new_data_available,
+         name="earthquake-check-the-amount-of-new-data-available"),
+
+    # Spotify URLS
+    path('spotify/retrieve-data/', sprotify_view.retrieve_data, name="spotify-retrieve-data"),
+    path('spotify/test-numpy/', sprotify_view.test_numpy, name="spotify-test-numpy"),
+    path('spotify/test-matplotlib/', sprotify_view.test_matplotlib, name="spotify-test-matplotlib"),
 ]
