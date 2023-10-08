@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-l!xh010g0avey2x82_y+9kwwoc7t$ob_z%6=fja1(#4*&@0(w_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 # Application definition
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'ComputationalScienceProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'computational_science',
         'USER': 'postgres',
         'PASSWORD': 'password',

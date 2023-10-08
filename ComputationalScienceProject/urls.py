@@ -17,10 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from earthquake import views as earthquake_views
+from spotify import views as spotify_views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-# Earthquake URLS
+    # Earthquake URLS
     path('earthquake/check/', earthquake_views.check, name="earthquake-check"),
     path('earthquake/retrieve-data/', earthquake_views.retrieve_data, name="earthquake-retrieve-data"),
     path('earthquake/collect-new-data/', earthquake_views.collect_new_data, name="earthquake-collect-new-data"),
@@ -28,7 +31,7 @@ urlpatterns = [
          name="earthquake-check-the-amount-of-new-data-available"),
 
     # Spotify URLS
-    path('spotify/retrieve-data/', sprotify_view.retrieve_data, name="spotify-retrieve-data"),
-    path('spotify/test-numpy/', sprotify_view.test_numpy, name="spotify-test-numpy"),
-    path('spotify/test-matplotlib/', sprotify_view.test_matplotlib, name="spotify-test-matplotlib"),
+    path('spotify/retrieve-data/', spotify_views.retrieve_data, name="spotify-retrieve-data"),
+    path('spotify/test-numpy/', spotify_views.test_numpy, name="spotify-test-numpy"),
+    path('spotify/test-matplotlib/', spotify_views.test_matplotlib, name="spotify-test-matplotlib"),
 ]
