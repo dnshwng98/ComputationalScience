@@ -13,10 +13,5 @@ def retrieve_data(request):
 
 
 @api_view(['GET'])
-def test_numpy(request):
-    return HttpResponse(business_logics.test_numpy())
-
-
-@api_view(['GET'])
-def test_matplotlib(request):
-    return HttpResponse(business_logics.test_matplotlib())
+def color_gradation(request):
+    return HttpResponse(business_logics.color_gradation())

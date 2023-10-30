@@ -32,6 +32,5 @@ urlpatterns = [
 
     # Spotify URLS
     path('spotify/retrieve-data/', spotify_views.retrieve_data, name="spotify-retrieve-data"),
-    path('spotify/test-numpy/', spotify_views.test_numpy, name="spotify-test-numpy"),
-    path('spotify/test-matplotlib/', spotify_views.test_matplotlib, name="spotify-test-matplotlib"),
+    path('spotify/color-gradation/', spotify_views.color_gradation, name="spotify-color-gradation"),
 ]
