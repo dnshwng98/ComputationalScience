@@ -1,3 +1,3 @@
 # ComputationalScience
 
-Number experiment using Django
+Numbers and data experiment using Django
