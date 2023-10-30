@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.template.response import TemplateResponse
 from rest_framework.decorators import api_view
 
-from earthquake import business_logics
+from apps.earthquake import business_logics
 
 
 @api_view(['GET'])

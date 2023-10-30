@@ -17,8 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from earthquake import views as earthquake_views
-from spotify import views as spotify_views
+from apps.earthquake import views as earthquake_views
+from apps.spotify import views as spotify_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),

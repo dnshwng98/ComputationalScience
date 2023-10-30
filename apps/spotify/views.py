@@ -3,7 +3,7 @@ import json
 from django.http import HttpResponse
 from rest_framework.decorators import api_view
 
-from spotify import business_logics
+from apps.spotify import business_logics
 
 
 @api_view(['GET'])
